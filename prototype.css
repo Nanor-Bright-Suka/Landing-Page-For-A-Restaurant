@@ -1,0 +1,298 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+#top {
+    color: red;
+    text-align: center;
+    font-size: 40px ;
+    font-family: 'Ubuntu Mon', monospace;
+}
+#top1 {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+/* Navigation bar styling */
+
+/* Navbar image styling */
+
+#navbar img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 4px;
+}
+  /* Navbar Functionality */
+#navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    height: 14vh;
+    width: 100vw;
+    font-family: 'Ubuntu Mono' monospace;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+
+}
+/* Navbar content functionality */
+        #navcontent {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Navbar content styling */
+        ul li {
+            list-style-type: none;
+            margin: 17px;
+            border-radius: 15px;
+        }
+
+        ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            padding: 1.5px;
+        }
+
+        ul li a:hover {
+            background-color: red;
+            border-radius: 10px;
+        }
+        
+            /* website background image designing */
+            #container1 {
+                position: relative;
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                width: 100vw;
+                height: 63vh;
+            }
+
+            /* Setting the background image using the before pseudo selector */
+
+            #container1::before {
+                content: "";
+                background-image: url("./img/uh.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 100vw;
+                height: 59vh;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin-right: 45px;
+                font-family: 'Ubuntu Mono', monospace;
+                z-index: -1;
+                opacity: 0.89;
+                border: 2px solid black;
+        
+
+            }
+            #row1 {
+                color: black;
+                font-size: 2.5rem;
+                text-align: center;
+                margin-top:30px;
+            }
+
+            .btn {
+                margin-top: 20px;
+                border: 5px solid wheat;
+                border-radius: 10px;
+                background-color: yellow;
+                font-size: 15px;
+                font-weight: bolder;
+            }
+            .btn:hover {
+                background-color: red;
+            }
+
+
+            #container3 {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #row2 {
+                width: 20vw;
+                height: 21vh;
+                box-shadow: 2px 7px 16px 20px;
+                margin-top: 52px;
+                margin-bottom: 51px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                position: relative;
+                margin-right: 100px;
+                border-radius: 45px;
+            }
+            #row2::before {
+                content: "";
+                background-image: url("./img/Pizza.jpeg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                margin-right: 100px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 20vw;
+            height: 21vh;
+            border-radius: 45px;
+            z-index: -1;
+            }
+
+            #row3 {
+                width: 20vw;
+                height: 21vh;
+                box-shadow: 2px 7px 16px 20px;
+                margin-top: 52px;
+                margin-bottom: 51px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                position: relative;
+                margin-right: 100px;
+                border-radius: 45px;
+            }
+
+            #row3::before {
+                content: "";
+                background-image: url("./img/Tuozafi.jpeg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                margin-right: 100px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 20vw;
+            height: 21vh;
+            border-radius: 45px;
+            z-index: -1;
+            }
+
+
+            #top3 {
+                text-align: center;
+                color: red;
+                font-size: 3rem;
+            }
+
+             #container4 {
+                display: grid;
+                grid-template-columns:  repeat(auto-fit, minmax(350px, 1fr));
+                margin: 45px;
+            } 
+            #row4 {
+                width: 29vw;
+                height: 360px;
+                border: 2px solid black;
+                background-image: url('img/Tuozafi.jpeg');
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                border-radius: 15px;
+            }
+            #row5 {
+                width: 29vw;
+                height: 360px;
+                border: 2px solid black;
+                background-image: url('img/Pizza.jpeg');
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                border-radius: 15px;
+            }
+            #row6 {
+                width: 29vw;
+                height: 360px;
+                border: 2px solid black;
+                background-image: url('img/Restaurant.png.jpeg');
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                border-radius: 15px;
+            }
+            @media only screen and (max-width:1131px){
+                #row4{
+                    width: 42vw;
+                }
+                #row5{
+                    width:45vw;
+                    gap: 10px;
+                }
+                #row6{
+                    margin-top: 20px;
+                    width:90vw;
+                }
+           
+            
+                #row4{
+                    width:84vw;
+                    margin: auto;
+                    margin-left: 22px;
+                }
+                #row5{
+                    
+                    width:84vw;
+                    margin: auto;
+                    margin-top: 20px;
+                    margin-left: 22px;
+                }
+                #row6{
+                    width:84vw;
+                    margin: auto;
+                    margin-top: 20px;
+                    margin-left: 22px;
+                }
+            }
+                @media only screen and (max-width:600px){
+                    #row4{
+                        width:78vw;
+                        margin: auto;
+                        margin-left: 3px;
+                    }
+                    #row5{
+                        
+                        width:78vw;
+                        margin: auto;
+                        margin-top: 20px;
+                        margin-left: 3px;
+                    }
+                    #row6{
+                        width:78vw;
+                        margin: auto;
+                        margin-top: 20px;
+                        margin-left: 3px;
+                    }
+                }
+                @media only screen and (min-height:1000px){
+                    #navbar{
+                        height:10vh;
+                    }
+                    #container1::before{
+                        height:39vh;
+                    }
+                    #container1{
+                        height:44vh
+                    }
+                }

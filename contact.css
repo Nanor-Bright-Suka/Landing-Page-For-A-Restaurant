@@ -1,0 +1,28 @@
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   body {
+    background-color: bisque;
+   }
+
+   #form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 100vh;
+   }
+  
+   .form-shape input, .form-shape select, .form-shape textarea {
+    width: 95%;
+    padding: 0.5rem;
+   }
+
+   ::placeholder {
+    color: blueviolet;
+    text-align: center;
+   }
